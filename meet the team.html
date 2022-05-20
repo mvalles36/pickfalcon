@@ -1,7 +1,6 @@
 <!DOCTYPE html>
-<html  >
+<html>
 <head>
-  <!-- Site made with Mobirise Website Builder v5.6.5, https://mobirise.com -->
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="generator" content="Mobirise v5.6.5, mobirise.com">
@@ -33,13 +32,13 @@
 		 float: left;
 		 width: 188px;
 		 height: 334px;
-		 background:transparent url("assets/images/mike.png") center top no-repeat;
+		 background:transparent url("assets/images/mike.tiff") center top no-repeat;
 		 background-size: 125%;
 	 }
  
- .image-wrapper-1:hover
+ .image-wrapper-1:hover, .image-wrapper-1.hover
  {
-	 background-image: url("assets/images/hoodie-video-featuring-a-man-with-a-doubtful-expression-4801v.gif");
+	 background-image: url("assets/images/mike.gif");
  }
  
  .image-wrapper-2
@@ -47,13 +46,13 @@
 	 float: left;
 	 width: 188px;
 	 height: 334px;
-	 background:transparent url("assets/images/jennifer.png") center top no-repeat;
+	 background:transparent url("assets/images/jennifer.tiff") center top no-repeat;
 	 background-size: 125%;
  }
  
- .image-wrapper-2:hover
+ .image-wrapper-2:hover, .image-wrapper-2.hover
  {
-	 background-image: url("assets/images/sweatshirt-video-featuring-a-red-haired-woman-smiling-4808v.gif");
+	 background-image: url("assets/images/jennifer.gif");
  }
  
  .image-wrapper-3
@@ -61,13 +60,13 @@
 	 float: left;
 	 width: 188px;
 	 height: 334px;
-	 background:transparent url("assets/images/warren.png") center top no-repeat;
+	 background:transparent url("assets/images/warren.tiff") center top no-repeat;
 	 background-size: 125%;
  }
  
- .image-wrapper-3:hover
+ .image-wrapper-3:hover, .image-wrapper-3.hover
  {
-	 background-image: url("assets/images/t-shirt-mockup-of-a-tough-man-with-2d-motion-graphics-3315v.gif");
+	 background-image: url("assets/images/warren.gif");
  }
  
  .image-wrapper-4
@@ -75,13 +74,13 @@
 	 float: left;
 	 width: 188px;
 	 height: 334px;
-	 background:transparent url("assets/images/mark.png") center top no-repeat;
+	 background:transparent url("assets/images/mark.tiff") center top no-repeat;
 	 background-size: 125%;
  }
  
- .image-wrapper-4:hover
+ .image-wrapper-4:hover, .image-wrapper-4.hover
  {
-	 background-image: url("assets/images/hoodie-video-featuring-a-man-laughing-4800v.gif");
+	 background-image: url("assets/images/mark.gif");
  }
  
  .image-wrapper-5
@@ -89,13 +88,13 @@
 	 float: left;
 	 width: 188px;
 	 height: 334px;
-	 background:transparent url("assets/images/dustin.png") center top no-repeat;
+	 background:transparent url("assets/images/dustin.tiff") center top no-repeat;
 	 background-size: 125%;
  }
  
- .image-wrapper-5:hover
+ .image-wrapper-5:hover, .image-wrapper-5.hover
  {
-	 background-image: url("assets/images/back-view-video-featuring-a-man-pointing-at-his-hoodie-44096v.gif");
+	 background-image: url("assets/images/dustin.gif");
  }
 </style>
   
@@ -330,9 +329,79 @@
             
         </div>
     </div>
-</section><section class="display-7" style="padding: 0;align-items: center;justify-content: center;flex-wrap: wrap;    align-content: center;display: flex;position: relative;height: 4rem;"><a href="https://mobiri.se/2054907" style="flex: 1 1;height: 4rem;position: absolute;width: 100%;z-index: 1;"><img alt="" style="height: 4rem;" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="></a><p style="margin: 0;text-align: center;" class="display-7">Created with Mobirise &#8204;</p><a style="z-index:1" href="https://mobirise.com/offline-website-builder.html">Offline Website Software</a></section><script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>  <script src="assets/smoothscroll/smooth-scroll.js"></script>  <script src="assets/ytplayer/index.js"></script>  <script src="assets/dropdown/js/navbar-dropdown.js"></script>  <script src="assets/theme/js/script.js"></script>  
-  
-  
+</section><section class="display-7" style="padding: 0;align-items: center;justify-content: center;flex-wrap: wrap;    align-content: center;display: flex;position: relative;height: 4rem;"><a href="" style="flex: 1 1;height: 4rem;position: absolute;width: 100%;z-index: 1;"><img alt="" style="height: 4rem;" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="></a><p style="margin: 0;text-align: center;" class="display-7">Made with love in Fort Worth, Texas</p><a style="z-index:1" href=""></a></section><script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>  <script src="assets/smoothscroll/smooth-scroll.js"></script>  <script src="assets/ytplayer/index.js"></script>  <script src="assets/dropdown/js/navbar-dropdown.js"></script>  <script src="assets/theme/js/script.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script>
+  <script>
+	  $('.image-wrapper-1').on("touchstart", function (e) {
+						 "use strict"; //satisfy the code inspectors
+						 var link = $(this); //preselect the link
+						 if (link.hasClass('hover')) {
+						 return true;
+						 } else {
+						 link.addClass("hover");
+						 $('.image-wrapper-1').not(this).removeClass("hover");
+						 e.preventDefault();
+						 return false; //extra, and to make sure the function has consistent return points
+						 }
+						 });
+						 </script>
+  <script>
+	  $('.image-wrapper-2').on("touchstart", function (e) {
+							   "use strict"; //satisfy the code inspectors
+							   var link = $(this); //preselect the link
+							   if (link.hasClass('hover')) {
+							   return true;
+							   } else {
+							   link.addClass("hover");
+							   $('.image-wrapper-2').not(this).removeClass("hover");
+							   e.preventDefault();
+							   return false; //extra, and to make sure the function has consistent return points
+							   }
+							   });
+	  </script>
+  <script>
+	  $('.image-wrapper-3').on("touchstart", function (e) {
+							   "use strict"; //satisfy the code inspectors
+							   var link = $(this); //preselect the link
+							   if (link.hasClass('hover')) {
+							   return true;
+							   } else {
+							   link.addClass("hover");
+							   $('.image-wrapper-3').not(this).removeClass("hover");
+							   e.preventDefault();
+							   return false; //extra, and to make sure the function has consistent return points
+							   }
+							   });
+	  </script>
+  <script>
+	  $('.image-wrapper-4').on("touchstart", function (e) {
+							   "use strict"; //satisfy the code inspectors
+							   var link = $(this); //preselect the link
+							   if (link.hasClass('hover')) {
+							   return true;
+							   } else {
+							   link.addClass("hover");
+							   $('.image-wrapper-4').not(this).removeClass("hover");
+							   e.preventDefault();
+							   return false; //extra, and to make sure the function has consistent return points
+							   }
+							   });
+	  </script>
+  <script>
+	  $('.image-wrapper-5').on("touchstart", function (e) {
+							   "use strict"; //satisfy the code inspectors
+							   var link = $(this); //preselect the link
+							   if (link.hasClass('hover')) {
+							   return true;
+							   } else {
+							   link.addClass("hover");
+							   $('.image-wrapper-5').not(this).removeClass("hover");
+							   e.preventDefault();
+							   return false; //extra, and to make sure the function has consistent return points
+							   }
+							   });
+	  </script>
   <input name="animation" type="hidden">
   </body>
 </html>
