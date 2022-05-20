@@ -959,14 +959,3 @@ blockquote {
 	top: 0;
 	left: -2400px;
 }
-.result {
-	display: none;
-}
-
-.active {
-	display: block;
-}
-
-.inactive {
-	display: none;
-}
