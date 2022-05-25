@@ -9221,6 +9221,7 @@ a {
   height: 40px;
   border-radius: 50%;
   margin-top: 5px;
+  border-radius: 0;
   content: "✓";
 }
 .cid-t6Hg8UMy1S .mbr-text {
