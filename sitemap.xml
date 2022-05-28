@@ -21,9 +21,6 @@
 		<loc>https://pickfalcon.com/next_steps.html</loc>
 	</url>
 	<url>
-		<loc>https://pickfalcon.com/current_positions.html</loc>
-	</url>
-	<url>
 		<loc>https://pickfalcon.com/timberline_solar.html</loc>
 	</url>
 	<url>
@@ -49,5 +46,11 @@
 	</url>
 	<url>
 		<loc>https://pickfalcon.com/application.html</loc>
+	</url>
+	<url>
+		<loc>https://pickfalcon.com/jobs_at_falcon.html</loc>
+	</url>
+	<url>
+		<loc>https://pickfalcon.com/virtual_remodeler.html</loc>
 	</url>
 </urlset>
